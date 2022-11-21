@@ -1,0 +1,7 @@
+
+{{/*  Requires emoji true  */}}
+{{ $rating := .Get "rating"}}
+{{ $stars := strings.Repeat $rating (emojify ":star:") }}
+{{ printf "%s" $stars}}
+
+      
